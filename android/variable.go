@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"magma/soong/android"
+	"streak/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -127,8 +127,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include Magma variables
-		Magma android.Product_variables
+		// include Streak variables
+		Streak android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -293,8 +293,8 @@ type productVariables struct {
 
 	TargetFSConfigGen []string `json:",omitempty"`
 
-	// include Magma variables
-	Magma android.ProductVariables
+	// include Streak variables
+	Streak android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
