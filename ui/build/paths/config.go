@@ -118,6 +118,7 @@ var Configuration = map[string]PathConfig{
 	"ld":         Forbidden,
 	"ld.bfd":     Forbidden,
 	"ld.gold":    Forbidden,
+	"perl":       Forbidden,
 	"pkg-config": Forbidden,
 
 	// These are toybox tools that only work on Linux.
